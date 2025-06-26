@@ -3,6 +3,7 @@ import FirstBook from "../../images/book1.png";
 import SecondBook from "../../images/book2.png";
 import ThirdBook from "../../images/book3.png";
 import { useState } from "react";
+
 const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0);
 
@@ -13,6 +14,7 @@ const Slider = () => {
             setSlideIndex(slideIndex < 2 ? slideIndex +1 : 0)
         }
     }
+    
     return ( 
         <div className="slider">
             <i onClick={() => handleClick("left")} className="bi bi-chevron-double-left arrow-left"></i>
