@@ -1,14 +1,26 @@
+import { Link } from "react-router-dom";
+
 const FooterItems = () => {
   return (
     <div className="footer-items-wrapper">
       <div className="footer-items">
         <h3 className="footer-item-title">Usefull Links</h3>
         <ul className="footer-item-links">
-          <li className="footer-link">Home</li>
-          <li className="footer-link">Authors</li>
-          <li className="footer-link">About Us</li>
-          <li className="footer-link">Contact Us</li>
-          <li className="footer-link">Register</li>
+          <Link to="/" className="footer-link">
+            Home
+          </Link>
+          <Link to="/authors" className="footer-link">
+            Authors
+          </Link>
+          <Link to="/about" className="footer-link">
+            About Us
+          </Link>
+          <Link to="/contact" className="footer-link">
+            Contact Us
+          </Link>
+          <Link to="/register" className="footer-link">
+            Register
+          </Link>
         </ul>
       </div>
 
@@ -33,11 +45,11 @@ const FooterItems = () => {
       <div className="footer-items">
         <h3 className="footer-item-title">About Us</h3>
         <p className="footer-item-description">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-          incidunt, quidem voluptatum nostrum molestiae quas quae eius mollitia
-          officia illo? Asperiores quo accusamus quidem nam placeat deleniti
-          saepe architecto necessitatibus. Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Repellendus culpa sunt sint rem vel.
+          Our Book Store is your go-to destination for stories that inspire,
+          educate, and entertain. From bestsellers to hidden gems, we offer a
+          wide range of books for every reader. We’re passionate about creating
+          a smooth, enjoyable experience — helping you discover your next great
+          read with ease and joy.
         </p>
       </div>
     </div>

@@ -1,15 +1,42 @@
-const Navbar = ({toggle, setToggle}) => {
-    return ( 
-    <nav style={{left: toggle && "0"}} className="navbar">
-        <ul className="navbar-links">
-            <i onClick={() => setToggle(false)} className="navbar-link">Home</i>
-            <i onClick={() => setToggle(false)} className="navbar-link">Authors</i>
-            <i onClick={() => setToggle(false)} className="navbar-link">About Us</i>
-            <i onClick={() => setToggle(false)} className="navbar-link">Contact Us</i>
-            <i onClick={() => setToggle(false)} className="navbar-link">Register</i>
-      
-        </ul>
-    </nav> );
-}
- 
+import { Link } from "react-router-dom";
+const Navbar = ({ toggle, setToggle }) => {
+  return (
+    <nav style={{ left: toggle && "0" }} className="navbar">
+      <ul className="navbar-links">
+        <Link to="/" onClick={() => setToggle(false)} className="navbar-link">
+          Home
+        </Link>
+        <Link
+          to="/authors"
+          onClick={() => setToggle(false)}
+          className="navbar-link"
+        >
+          Authors
+        </Link>
+        <Link
+          to="/about"
+          onClick={() => setToggle(false)}
+          className="navbar-link"
+        >
+          About Us
+        </Link>
+        <Link
+          to="/contact"
+          onClick={() => setToggle(false)}
+          className="navbar-link"
+        >
+          Contact Us
+        </Link>
+        <Link
+          to="/register"
+          onClick={() => setToggle(false)}
+          className="navbar-link"
+        >
+          Register
+        </Link>
+      </ul>
+    </nav>
+  );
+};
+
 export default Navbar;

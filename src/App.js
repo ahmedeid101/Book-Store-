@@ -1,26 +1,32 @@
 import './App.css';
-import BookSlider from './Components/Book_Slider/BookSlider';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
-import HeadingTitle from './Components/Heading_Title/HeadingTitle';
-import Services from './Components/Services/Services';
-import Slider from './Components/Slider/Slider';
-import {books} from "./data/books"
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import HomePage from './Pages/Home/HomePage';
+import Authors from './Pages/Authors/Authors';
+import About from './Pages/About/About';
+import Contact from './Pages/Contact/Contact';
+import Register from './Pages/Forms/Register';
+import Login from './Pages/Forms/Login';
+import Cart from './Pages/Cart/Cart';
+import Book from './Pages/Book/Book';
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Header/>
-      <Slider/>
-      <Services/>
-      <HeadingTitle title={"Most Gifted"}/>
-      <BookSlider data={books}/>
-      <HeadingTitle title={"Best Seller"}/>
-      <BookSlider data={books}/>
-      <HeadingTitle title={"Most Wished For"}/>
-      <BookSlider data={books}/>
+      <Routes>
+        <Route  path='/' element={<HomePage/>}/>
+        <Route  path='/authors' element={<Authors/>}/>
+        <Route  path='/about' element={<About/>}/>
+        <Route  path='/contact' element={<Contact/>}/>
+        <Route  path='/register' element={<Register/>}/>
+        <Route  path='/login' element={<Login/>}/>
+        <Route  path='/cart' element={<Cart/>}/>
+        <Route  path='/book/:id' element={<Book/>}/>
+      </Routes>
       <Footer/>
-    </div>
+    </BrowserRouter>
   );
 }
 

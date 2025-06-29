@@ -67,10 +67,12 @@
 }
 
 .footer-link{
+    display: flex;
     font-size: 22px;
     color: var(--main-color);
     margin-bottom: 10px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .footer-item-contact{
