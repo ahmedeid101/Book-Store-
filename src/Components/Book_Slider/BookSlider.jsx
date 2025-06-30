@@ -1,10 +1,12 @@
 import "./BookSlider.css";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import RatingBook from "./Rating";
 import Model from "../Model/Model";
+import CartContext from "../../Context/CartContext";
 
 
 const BookSlider = ({data}) => {
+    const {addToCart} = useContext(CartContext);
     const [slideIndex, setSlideIndex] = useState(0);
     const [openMpdel, setOpenModel] = useState(false);
     const [bookData, setBookData] = useState(0);
@@ -37,7 +39,7 @@ const BookSlider = ({data}) => {
                     <div className="book-slider-item-price">${item.price}</div>
                     <div className="book-slider-icon-wrapper">
                         <i onClick={() => handleModel(item)} className="bi bi-eye-fill"></i>
-                        <i className="bi bi-cart-plus"></i>
+                        <i onClick={() => addToCart({...item, quantity: 1})} className="bi bi-cart-plus"></i>
                     </div>
                 </div>)}
             </div>
