@@ -10,10 +10,12 @@ import Register from './Pages/Forms/Register';
 import Login from './Pages/Forms/Login';
 import Cart from './Pages/Cart/Cart';
 import Book from './Pages/Book/Book';
+import { BookProvider } from './Context/BookContext';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BookProvider>
+      <BrowserRouter>
       <Header/>
       <Routes>
         <Route  path='/' element={<HomePage/>}/>
@@ -27,6 +29,8 @@ function App() {
       </Routes>
       <Footer/>
     </BrowserRouter>
+    </BookProvider>
+
   );
 }
 

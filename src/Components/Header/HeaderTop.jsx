@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HeaderTop = ({toggle, setToggle}) => {
     return ( 
         <div className="header-top">
@@ -11,10 +13,13 @@ const HeaderTop = ({toggle, setToggle}) => {
             <div className="header-top-text">
                 Welcom to my Book Store
             </div>
-            <div className="header-top-link">
+            
+            <Link to={"/login"} className="header-top-link">
                 <i className="bi bi-person-fill"></i>
                 Login
-            </div>
+            </Link>
+            
+            
         </div>
      );
 }

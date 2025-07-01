@@ -104,3 +104,12 @@
     font-weight: 600;
 
 }
+
+/* No results message */
+.no-results {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #666;
+}

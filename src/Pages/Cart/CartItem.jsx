@@ -18,7 +18,7 @@ const CartItem = ({ item, addToCart,  removeFromCart}) => {
               <i className="bi bi-plus-lg"></i>
             </button>
             <b>{quantity}</b>
-            <button onClick={() => addToCart({...item, quantity: item.quantity - 1})}>
+            <button disabled={quantity <= 1} onClick={() => addToCart({...item, quantity: item.quantity - 1})}>
               <i className="bi bi-dash-lg"></i>
             </button>
           </div>

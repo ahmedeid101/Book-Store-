@@ -68,6 +68,10 @@
     border-radius: 4px;
 }
 
+.cart-item-quantity button:disabled{
+    cursor: not-allowed;
+}
+
 .cart-item-quantity b{
     font-size: 24px;
     margin: 0 10px;
