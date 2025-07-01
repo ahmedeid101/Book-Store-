@@ -10,7 +10,7 @@ A modern React-based online bookstore with seamless browsing, search functionali
 
 ## ✨ Features
 
-- 🔍 Search books by title, author, or genre
+- 🔍 Search books by title, author, or language
 - 🛒 Shopping cart with quantity management
 - 📚 Multiple book categories (Most Gifted, Best Seller, Most Wished For)
 - 📱 Fully responsive design
