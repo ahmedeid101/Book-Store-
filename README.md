@@ -71,3 +71,24 @@ Distributed under the MIT License. See LICENSE for more information.
 Ahmed Eid - ahmedgebrel101@gmail.com
 
 Project Link: https://github.com/ahmedeid101/Page_Turner
+
+
+### How to Customize:
+
+1. **Replace Placeholders**:
+   - `YOUR-DEPLOY-ID` and `YOUR-SITE-NAME` with your Netlify details
+   - Update the live demo URL
+   - Add your actual screenshot (name it `screenshot.png` in `/src/assets/`)
+
+2. **Add More Sections** if needed:
+   ```markdown
+   ## 🎨 Color Reference
+   | Color         | Hex        |
+   |-------------- |----------- |
+   | Primary Blue  | `#1926d2`  |
+   | Secondary     | `#2c3e50`  |
+   
+   ## 🔧 Future Improvements
+   - [ ] User authentication
+   - [ ] Book reviews system
+   - [ ] Payment integration

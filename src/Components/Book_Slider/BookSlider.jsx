@@ -26,12 +26,12 @@ const BookSlider = ({ data, title }) => {
                 const searchLower = searchTerm.toLowerCase();
                 const bookTitle = book.title?.toLowerCase() || '';
                 const author = book.author?.toLowerCase() || '';
-                const genre = book.genre?.toLowerCase() || '';
+                const language = book.language?.toLowerCase() || '';
                 
                 return (
                     bookTitle.includes(searchLower) ||
                     author.includes(searchLower) ||
-                    genre.includes(searchLower)
+                    language.includes(searchLower)
                 );
             });
             setDisplayedBooks(filtered);
