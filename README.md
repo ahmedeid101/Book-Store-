@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# 📖 Page Turner - Online Bookstore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR-DEPLOY-ID/deploy-status)](https://app.netlify.com/sites/YOUR-SITE-NAME/deploys)
+[![GitHub stars](https://img.shields.io/github/stars/ahmedeid101/Page_Turner?style=social)](https://github.com/ahmedeid101/Page_Turner/stargazers)
 
-## Available Scripts
+**Live Demo:** [View on Netlify](https://pageturner-store.netlify.app/)
 
-In the project directory, you can run:
+A modern React-based online bookstore with seamless browsing, search functionality, and shopping cart features.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🔍 Search books by title, author, or genre
+- 🛒 Shopping cart with quantity management
+- 📚 Multiple book categories (Most Gifted, Best Seller, Most Wished For)
+- 📱 Fully responsive design
+- ⚡ Fast loading with lazy-loaded images
+- 📖 Book details modal
 
-### `npm test`
+## 🚀 Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React.js (Functional Components)
+- React Router
+- Context API (State Management)
+- CSS Modules
+- Font Awesome Icons
+- Netlify (Hosting)
 
-### `npm run build`
+## 🛠️ Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+```bash
+git clone https://github.com/ahmedeid101/Page_Turner.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
+cd Page_Turner
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Run the development server:
+npm start
 
-### `npm run eject`
+📂 Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Page_Turner/
+├── src/
+│   ├── Components/       # Reusable components
+│   ├── Context/          # State management
+│   ├── data/             # Book data
+│   ├── assets/           # Images & icons
+│   └── App.js            # Main application
+├── public/
+└── README.md
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🤝 Contributing
+Contributions are welcome! Please follow these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Fork the project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Create your feature branch (git checkout -b feature/AmazingFeature)
 
-## Learn More
+Commit your changes (git commit -m 'Add some amazing feature')
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Push to the branch (git push origin feature/AmazingFeature)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Open a Pull Request
 
-### Code Splitting
+📄 License
+Distributed under the MIT License. See LICENSE for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📧 Contact
+Ahmed Eid - ahmedgebrel101@gmail.com
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: https://github.com/ahmedeid101/Page_Turner
